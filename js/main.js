@@ -434,3 +434,12 @@ const processChangeAddress = debounce(() => validateAddress());
     });
 
 })(jQuery);
+
+document.getElementById("notification-button").addEventListener("click", function() {
+    var menu = document.getElementById("notification-menu");
+    if (menu.style.display === "none" || menu.style.display === "") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  });
