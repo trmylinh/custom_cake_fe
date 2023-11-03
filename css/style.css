@@ -211,6 +211,71 @@ ol {
   -webkit-animation: loader 0.8s linear infinite;
 }
 
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  /* overflow: hidden; */
+  overflow: visible;
+  border-top: 1px solid #ebedf2; 
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #394250;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.float-right {
+  float: right !important;
+}
+a.text-muted:hover {
+  color: #007bff !important;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+.text-sm {
+  font-size: 0.875rem !important;
+} 
+
+.dropdown-header, .dropdown-footer{
+  text-align: center;
+}
+
+.dropdown-footer{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dropdown-header{
+  font-size: 15px;
+}
+
+#notification-menu {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 250px;
+  width: 320px;
+  z-index: 1000; /* Đặt độ ưu tiên cao hơn */
+
+}
+
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
